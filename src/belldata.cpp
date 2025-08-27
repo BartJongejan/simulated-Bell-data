@@ -55,7 +55,7 @@ This program works backwards: from the spatial configuration towards the observe
 
 The 'reference system' one can construct from the data is not Newton's absolute space.
 The separation H takes two keys that are not local to each other. It cannot take two keys from the
-same location. It is more of a digraph than a full-fledged system of reference.
+same location. It is a complete bipartite graph rather than a full-fledged system of reference.
 */
 
 #include <stddef.h>
