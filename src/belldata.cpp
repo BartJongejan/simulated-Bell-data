@@ -274,8 +274,7 @@ static betweenminus1and1 dotProduct(apparatus* AliceApparatus, apparatus* BobApp
     }
 
 /* :
-Compute hyperspherical cap using a recursive algorithm,
-based on my own goniometric expression
+Compute hyperspherical cap using a recursive algorithm.
 */
 static angle I(angle gamma, dimension n)
     {
@@ -326,7 +325,7 @@ static void printpair(FILE* fp, matrix Matrix, result* Pr, apparatus* NAliceKeys
     }
 
 static void printpairNarrow(FILE* fp, matrix Matrix, result* Pr, apparatus* NAliceKeys, apparatus* NBobKeys)
-    { /* Compact output, but many lines and therefore very large all the same */
+    { /* Compact output, but many lines and therefore very large all the same. */
     between0and2 aFluid = Pr->al > 2.0 ? 4.0 - Pr->al : Pr->al;
     between0and2 bFluid = Pr->bl > 2.0 ? 4.0 - Pr->bl : Pr->bl;
     key_choice A = Pr->a;
@@ -385,7 +384,7 @@ static void createLambdas(result* Experiment, trial Ntrials)
     /*
     lambda climbs monotonously from 0 to 4 in Ntrials small, equal steps in the pLambda array.
     The e field is used to disorganise the experiments, so that lambda varies randomly from
-    trial to the next trial in the Experiment array. This is not unnecessary, but adds to the
+    trial to the next trial in the Experiment array. This is not necessary, but adds to the
     photo-realism of the produced 'data'.
     */
     trial t;
