@@ -1,5 +1,5 @@
 /* belldata.cpp
-Bart Jongejan, summer 2025, Copenhagen, Denmark
+Bart Jongejan, September 2025, Copenhagen, Denmark
 
 Command line program to create
 1) Data that could have been created in an ideal Bohm-Bell experiment
@@ -30,12 +30,12 @@ the apparatuses are prepared without sharing anything.
 
 With offset=0, the generated data houses a strong correlation between keys and colour observations.
 Expectation values P(a,b) can be found that, once filled in into the CHSH inequality, can violate it.
-For dimension=2, no violation occurs
+For dimension=2, no violation occurs.
 For higher dimensions, violations occur. The higher the dimension, the larger the violation, with a
 ceiling of 4.
 
 The correlations can be used (not demonstrated here) to construct the configuration of spatial
-directions in ALice's and Bob's apparatuses. Thus, in the end, the spatial system of reference
+directions in Alice's and Bob's apparatuses. Thus, in the end, the spatial system of reference
 that we ignore to begin with is regained.
 
 This program works backwards: from the spatial configuration towards the observed data.
@@ -43,7 +43,7 @@ This program works backwards: from the spatial configuration towards the observe
     the other for Bob's.
 (2) It determines the separation H(a,b) between each pair of vectors (a,b).
     The separation is a function 0 <= H <= 2 that has a uniform distribution if a and b are uniform
-    distibuted. The exact form depends on the number of dimensions:
+    distributed. The exact form depends on the number of dimensions:
     In 2 dimensions, H(a,b) is equal to the angle between a and b divided by π/2
     In 3 dimensions, H(a,b) is equal to 1-cos(angle(a,b))
     etc.
