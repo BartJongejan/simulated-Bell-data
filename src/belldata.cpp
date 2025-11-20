@@ -499,12 +499,12 @@ static void count_SpinUp_SpinDown(matrix* CorrelationMatrix, result* Experiment,
         between0and4 bl;
         between0and2 diffah;  // |a-λ|
         between0and2 diffbh;  // |b-λ|
-        result* AlicesExperiment = Experiment + t;
-        result* BobsExperiment = Experiment + ((t + noff) % Ntrials);
-        key_choice AlicesSetting = AlicesExperiment->a;
-        key_choice BobsSetting = BobsExperiment->b;
-        al = AlicesExperiment->al;  // 0 < λ < 4, λ is a stochastic variable
-        bl = BobsExperiment->bl;  // 0 < λ < 4, λ is a stochastic variable
+        result* AlicesTrial = Experiment + t;
+        result* BobsTrial = Experiment + ((t + noff) % Ntrials);
+        key_choice AlicesSetting = AlicesTrial->a;
+        key_choice BobsSetting = BobsTrial->b;
+        al = AlicesTrial->al;  // 0 < λ < 4, λ is a stochastic variable
+        bl = BobsTrial->bl;  // 0 < λ < 4, λ is a stochastic variable
 
         if(al > 2.0)
             diffah = 4.0 - al;
